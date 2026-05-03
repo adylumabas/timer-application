@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Timer | Nature Focus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video class="bg-video" muted autoplay loop webkit-playsinline>
+    <source src="timer-background.mp4" type="video/mp4">
+  </video>
+  <div class="forest-container">
+    <div class="timer-card">
+      <!-- header -->
+      <div class="brand">
+        <h1>eco<span class="highlight">Timer</span></h1>
+      </div>
+      
+      <!-- timer display -->
+      <div class="time-screen" id="timerDisplay">00:00:00</div>
+      
+      <!-- dynamic status indicator -->
+      <div class="status-panel">
+        <div class="status-label">Timer status</div>
+        <div class="status-badge" id="statusValue">Reset</div>
+      </div>
+      
+      <!-- button controls -->
+      <div class="button-group">
+        <button class="ctrl-btn start-btn" id="startBtn">▶ Start</button>
+        <button class="ctrl-btn pause-btn" id="pauseBtn">⏸ Pause</button>
+        <button class="ctrl-btn reset-btn" id="resetBtn">Reset</button>
+      </div>
+      
+      <!-- keyboard hint (soft nature note) -->
+      <div class="shortcuts-note">
+        <span>keyboard shortcuts: </span>
+        <kbd>S</kbd> start · <kbd>P</kbd> pause · <kbd>R</kbd> reset
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
